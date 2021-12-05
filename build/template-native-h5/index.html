@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta content="telephone=no, email=no" name="format-detection">
+	<!-- 启用360浏览器的极速模式(webkit) -->
+	<meta name="renderer" content="webkit">
+	<!-- 避免IE使用兼容模式 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+	<meta name="HandheldFriendly" content="true">
+	<!-- 微软的老式浏览器 -->
+	<meta name="screen-orientation" content="portrait"><!-- uc强制竖屏 -->
+	<meta name="x5-orientation" content="portrait"><!-- QQ强制竖屏 -->
+  <title></title>
+  <link href="./css/style.css" rel="stylesheet" type="text/css">
+  <script>
+    // 适配
+    (function () {
+      var w = window,
+        d = document.documentElement,
+        c;
+      function sesetfontsize() {
+        var deviceWidth = d.clientWidth;
+        deviceWidth > 750 && (deviceWidth = 750);
+        var a = (deviceWidth / 7.5).toFixed(2);
+        d.style.fontSize = a + "px";
+        var b = parseFloat(w.getComputedStyle(d, null).fontSize);
+        if (a != b) {
+          a = a * a / b;
+          d.style.fontSize = a + "px";
+        }
+      }
+      sesetfontsize();
+      w.addEventListener("resize", function () {
+        clearTimeout(c),
+        c = setTimeout(sesetfontsize, 300)
+      }, !1)
+    })();
+  </script>
+</head>
+<body>
+  <div class="wap">
+  </div>
+</body>
+</html>

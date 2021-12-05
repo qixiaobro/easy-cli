@@ -1,0 +1,35 @@
+{
+  "name": "easy-cli",
+  "version": "1.0.0",
+  "description": "Create multiple template project scaffolding tools",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tsc"
+  },
+  "bin": {
+    "easy-create": "./build/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qixiaobro/easy-cli.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qixiaobro/easy-cli/issues"
+  },
+  "homepage": "https://github.com/qixiaobro/easy-cli#readme",
+  "devDependencies": {
+    "@types/node": "^16.11.10",
+    "typescript": "^4.5.2"
+  },
+  "dependencies": {
+    "@types/minimist": "^1.2.2",
+    "@types/prompts": "^2.0.14",
+    "kolorist": "^1.5.0",
+    "minimist": "^1.2.5",
+    "prompts": "^2.4.2"
+  }
+}

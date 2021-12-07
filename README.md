@@ -1,4 +1,4 @@
-# easy-cli
+# template-create-cli
 Create multiple template project scaffolding tools
 
 这是一个模版项目创建cli 工具。目前提供了以下项目模版，并添加了常用预设，工具函数封装。
@@ -14,4 +14,13 @@ Create multiple template project scaffolding tools
   *  jq-bootstrap-v4：使用 jq + bootstrap的原生官网模板
   
 
+安装
 
+```javascript
+npm i template-create-cli@1.0.0 -g
+```
+
+使用
+```javascript
+template-create
+```

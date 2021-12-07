@@ -57,11 +57,11 @@ const FRAMEWORKS = [
                 display: "native template",
                 color: kolorist_1.blue,
             },
-            // {
-            //   name: "jq-boostrap-v4",
-            //   display: "jq & boostrap v4 native template",
-            //   color: blue,
-            // },
+            {
+                name: "jq-bootstrap-v4",
+                display: "jq & boostrap v4 native template",
+                color: kolorist_1.blue,
+            },
         ],
     },
 ];

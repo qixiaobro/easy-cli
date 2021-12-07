@@ -1,5 +1,5 @@
 {
-  "name": "easy-cli",
+  "name": "template-create-cli",
   "version": "1.0.0",
   "description": "Create multiple template project scaffolding tools",
   "main": "index.js",
@@ -8,7 +8,7 @@
     "build": "npx tsc"
   },
   "bin": {
-    "easy-create": "./build/index.js"
+    "template-create": "./build/index.js"
   },
   "repository": {
     "type": "git",
